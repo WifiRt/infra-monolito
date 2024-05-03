@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: "ifce"
+      POSTGRES_PASSWORD: "SuperSecretPassword"
+      POSTGRES_DB: "english_project"
+    ports:
+      - "5432:5432"
