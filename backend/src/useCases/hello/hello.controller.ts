@@ -4,8 +4,8 @@ import { HelloUseCase } from "./hello.use-case";
 export class HelloController {
     async handle(req: Request, res: Response): Promise<Response> {
         const helloUseCase = new HelloUseCase();
-        const hello = helloUseCase.getHello();
+        const hello = await helloUseCase.getHello();
 
-        return res.send({ hello });
+        return res.send(hello);
     }
 }

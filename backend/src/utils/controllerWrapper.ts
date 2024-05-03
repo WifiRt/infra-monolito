@@ -3,10 +3,10 @@ export function controllerWrapper(Controller: any) {
 
     return async (req: any, res: any) => {
         try {
-            await controller.handle(req, res)
+            await controller.handle(req, res);
         }
         catch (err) {
-            res.status(500).send({ message: 'Internal server error' })
+            res.status(500).send({ message: 'Internal server error' });
         }
     }
 }

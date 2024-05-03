@@ -3,7 +3,7 @@ import { controllerWrapper } from './utils/controllerWrapper';
 
 import { HelloController } from './useCases/hello/hello.controller';
 
-const createApp = async () => {
+const createApp = () => {
     const app = express();
 
     app.use(express.json());
@@ -11,3 +11,5 @@ const createApp = async () => {
 
     return app;
 }
+
+export { createApp };
