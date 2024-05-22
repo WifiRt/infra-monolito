@@ -42,7 +42,7 @@
 }
 
 .main .cover .cover-img {
-    background-image: url('../assets/imgs/cover.jpg');
+    background-image: url('../imgs/cover.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -50,7 +50,7 @@
 }
 
 .main .cover .about-img {
-    background-image: url('../assets/imgs/aboutimage.jpg');
+    background-image: url('../imgs/aboutimage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -100,15 +100,15 @@
 }
 
 .main .contents .contents-pages > div:nth-child(1) .content-img {
-    background-image: url('../assets/imgs/card1.jpg');
+    background-image: url('../imgs/card1.jpg');
 }
 
 .main .contents .contents-pages > div:nth-child(2) .content-img {
-    background-image: url('../assets/imgs/card2.jpg');
+    background-image: url('../imgs/card2.jpg');
 }
 
 .main .contents .contents-pages > div:nth-child(3) .content-img {
-    background-image: url('../assets/imgs/card3.png');
+    background-image: url('../imgs/card3.png');
 }
 
 .main .contents .contents-pages a {
@@ -144,15 +144,15 @@
 }
 
 .card1-img {
-    background-image: url('../assets/imgs/Vector.png');
+    background-image: url('../imgs/Vector.png');
 }
 
 .card2-img {
-    background-image: url('../assets/imgs/Vector1.png');
+    background-image: url('../imgs/Vector1.png');
 }
 
 .card3-img {
-    background-image: url('../assets/imgs/Vector2.png');
+    background-image: url('../imgs/Vector2.png');
 }
 
 @media (max-width: 650px) {

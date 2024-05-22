@@ -127,7 +127,7 @@ body div.title span {
 
     .nav .menu-sidebar {
         display: block;
-        background-image: url('../assets/imgs/mobile-menu.png');
+        background-image: url('../imgs/mobile-menu.png');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
