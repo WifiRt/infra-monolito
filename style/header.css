@@ -1,0 +1,148 @@
+:root {
+    --p-color: #154961;
+    --s-color: #27607A;
+    --font-color: #fff;
+}
+
+header {
+    height: 70px;
+}
+
+.sidebar {
+    position: fixed;
+    right: 0px;
+    height: 100vh;
+    background-color: #01202e;
+    display: none;
+    flex-direction: column;
+    width: fit-content;
+    align-items: flex-end;
+}
+
+.sidebar .title {
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.sidebar .close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar .close:hover {
+    background-color: #001018;
+    cursor: pointer;
+}
+
+.sidebar > * {
+    margin: 15px 0px;
+    padding-right: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--p-color);
+    height: 70px;
+    width: 100%;
+}
+
+
+.nav > div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav .menu-sidebar {
+    display: none;
+}
+
+.link-sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.link-sidebar:hover {
+    background-color: #27607A;
+    cursor: pointer;
+}
+
+.nav a, .sidebar a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.nav > div:nth-child(2) > *{
+    margin: 0px 30px;
+}
+
+.nav > div:nth-child(3) > * {
+    margin-left: 15px;
+}
+
+footer.footer div.title > div{
+    display: flex;
+    align-items: center;
+}
+body div.title span {
+    margin-left: 10px;
+}
+
+.login {
+    background-color: var(--p-color);
+    color: var(--font-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.cadastro {
+    background-color: #fff;
+    padding: 10px 20px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    color: var(--p-color);
+}
+
+@media screen and (max-width: 650px) {
+    .header .nav > div:nth-child(3), .header .nav > div:nth-child(2){
+        display: none;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav .menu-sidebar {
+        display: block;
+        background-image: url('../assets/imgs/mobile-menu.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 30px;
+        height: 50%;
+    }
+
+    .nav .menu-sidebar:hover {
+        background-color: #01202e;
+    }
+
+    .nav > div {
+        flex-grow: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0px 30px;
+    }
+}
