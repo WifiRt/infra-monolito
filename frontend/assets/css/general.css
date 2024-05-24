@@ -1,0 +1,26 @@
+:root {
+    --p-color: #154961;
+    --s-color: #27607A;
+    --padding-btn-y: 10px;
+    --padding-btn-x: 20px;
+    --font-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto 1fr
+}
+
+div.title {
+    font-size: 2rem;
+    color: var(--font-color);
+    font-weight: bolder;
+    align-items: center;
+}
